@@ -1,6 +1,11 @@
 # BMI Calculator MCP Service
 
-全人群BMI计算器MCP服务，支持从儿童到老年人的BMI计算和分类。
+全人群BMI计算器MCP服务，支持从儿童到老年人的BMI计算和评价分类。
+注：6-20岁的在校学生有专门的BMI评价标准，与成年人标准有所不同，
+且严格细分目前大模型（LLM)学到的知识里都只有一个笼统的评价标准，
+不利于对健康体重的评价分类,本服务为大模型能获取更细分的健康体重
+评价分类提供了精确的计算和评价，为健康体重相关提问和应用项目增
+加一个实用的科学工具。
 
 ## 功能特点
 
@@ -302,4 +307,7 @@ from bmiMCP import BMIEvaluator
 evaluator = BMIEvaluator()
 result = evaluator.evaluate(25, "male", 70, 1.75)
 print(result)  # {'bmi': 22.9, 'category': 'normal'}
-```
+
+## 许可证
+
+本项目采用MIT许可证，详情请见 [LICENSE](LICENSE) 文件。
