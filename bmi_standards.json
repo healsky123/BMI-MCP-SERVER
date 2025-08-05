@@ -1,0 +1,188 @@
+{
+  "bmi_standards": {
+    "male": {
+     "6": {
+        "underweight": [0, 13.4],
+        "normal": [13.5, 18.1],
+        "overweight": [18.2, 20.3],
+        "obese": [20.4, null]
+      },
+      "7": {
+        "underweight": [0, 13.6],
+        "normal": [13.7, 18.4],
+        "overweight": [18.5, 20.4],
+        "obese": [20.5, null]
+      },
+      "8": {
+        "underweight": [0, 13.8],
+        "normal": [13.9, 19.4],
+        "overweight": [19.5, 22.1],
+        "obese": [22.2, null]
+      },
+      "9": {
+        "underweight": [0, 14.1],
+        "normal": [14.2, 20.1],
+        "overweight": [20.2, 22.6],
+        "obese": [22.7, null]
+      },
+      "10": {
+        "underweight": [0, 14.3],
+        "normal": [14.4, 21.4],
+        "overweight": [21.5, 24.1],
+        "obese": [24.2, null]
+      },
+      "11": {
+        "underweight": [0, 14.6],
+        "normal": [14.7, 21.8],
+        "overweight": [21.9, 24.5],
+        "obese": [24.6, null]
+      },
+      "12": {
+        "underweight": [0, 15.4],
+        "normal": [15.5, 22.1],
+        "overweight": [22.2, 24.9],
+        "obese": [25, null]
+      },
+      "13": {
+        "underweight": [0, 15.6],
+        "normal": [15.7, 22.5],
+        "overweight": [22.6, 25.2],
+        "obese": [25.3, null]
+      },
+      "14": {
+        "underweight": [0, 15.7],
+        "normal": [15.8, 22.8],
+        "overweight": [22.9, 26],
+        "obese": [26.1, null]
+      },
+      "15": {
+        "underweight": [0, 16.4],
+        "normal": [16.5, 23.2],
+        "overweight": [23.3, 26.3],
+        "obese": [26.4, null]
+      },
+      "16": {
+        "underweight": [0, 16.7],
+        "normal": [16.8, 23.7],
+        "overweight": [23.8, 26.5],
+        "obese": [26.6, null]
+      },
+      "17": {
+        "underweight": [0, 17.2],
+        "normal": [17.3, 23.8],
+        "overweight": [23.9, 27.3],
+        "obese": [27.4, null]
+      },
+      "18-19": {
+        "underweight": [0, 17.8],
+        "normal": [17.9, 23.9],
+        "overweight": [24, 27.9],
+        "obese": [28, null]
+      },
+      "20-59": {
+        "underweight": [0, 18.4],
+        "normal": [18.5, 23.9],
+        "overweight": [24, 27.9],
+        "obese": [28, null]
+      },
+      "60-79": {
+        "underweight": [0, 18.4],
+        "normal": [18.5, 23.9],
+        "overweight": [24, 27.9],
+        "obese": [28, null]
+      }
+    },
+    "female": {
+      "6": {
+        "underweight": [0, 13.2],
+        "normal": [13.3, 17.3],
+        "overweight": [17.4, 19.2],
+        "obese": [19.3, null]
+      },
+      "7": {
+        "underweight": [0, 13.4],
+        "normal": [13.5, 17.8],
+        "overweight": [17.9, 20.2],
+        "obese": [20.3, null]
+      },
+      "8": {
+        "underweight": [0, 13.5],
+        "normal": [13.6, 18.6],
+        "overweight": [18.7, 21.1],
+        "obese": [21.2, null]
+      },
+      "9": {
+        "underweight": [0, 13.6],
+        "normal": [13.7, 19.4],
+        "overweight": [19.5, 22],
+        "obese": [22.1, null]
+      },
+      "10": {
+        "underweight": [0, 13.7],
+        "normal": [13.8, 20.5],
+        "overweight": [20.6, 22.9],
+        "obese": [23, null]
+      },
+      "11": {
+        "underweight": [0, 14.1],
+        "normal": [14.2, 20.8],
+        "overweight": [20.9, 23.6],
+        "obese": [23.7, null]
+      },
+      "12": {
+        "underweight": [0, 14.7],
+        "normal": [14.8, 21.7],
+        "overweight": [21.8, 24.4],
+        "obese": [24.5, null]
+      },
+      "13": {
+        "underweight": [0, 15.2],
+        "normal": [15.3, 22.2],
+        "overweight": [22.3, 24.8],
+        "obese": [24.9, null]
+      },
+      "14": {
+        "underweight": [0, 15.9],
+        "normal": [16, 22.6],
+        "overweight": [22.7, 25.1],
+        "obese": [25.2, null]
+      },
+      "15": {
+        "underweight": [0, 16.4],
+        "normal": [16.5, 22.7],
+        "overweight": [22.8, 25.2],
+        "obese": [25.3, null]
+      },
+      "16": {
+        "underweight": [0, 16.8],
+        "normal": [16.9, 23.2],
+        "overweight": [23.3, 25.4],
+        "obese": [25.5, null]
+      },
+      "17": {
+        "underweight": [0, 17],
+        "normal": [17.1, 23.3],
+        "overweight": [23.4, 25.7],
+        "obese": [25.8, null]
+      },
+      "18-19": {
+        "underweight": [0, 17.1],
+        "normal": [17.2, 23.9],
+        "overweight": [24, 27.9],
+        "obese": [28, null]
+      },
+      "20-59": {
+        "underweight": [0, 18.5],
+        "normal": [18.5, 23.9],
+        "overweight": [24, 27.9],
+        "obese": [28, null]
+      },
+      "60-79": {
+        "underweight": [0, 18.5],
+        "normal": [18.5, 23.9],
+        "overweight": [24, 27.9],
+        "obese": [28, null]
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "name": "BMI Calculator",
+  "description": "全人群BMI计算器MCP服务，支持从儿童到老年人的BMI计算和分类",
+  "version": "1.0.0",
+  "transport": {
+    "stdio": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["mcp_stdio.py"],
+      "cwd": "."
+    },
+    "http": {
+      "type": "http",
+      "url": "http://localhost:8000",
+      "health_check_path": "/health"
+    }
+  },
+  "tools": [
+    {
+      "name": "calculate_bmi",
+      "description": "计算BMI值和分类",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "age": {
+            "type": "integer",
+            "description": "年龄（整数，6-79岁）"
+          },
+          "gender": {
+            "type": "string",
+            "enum": ["male", "female"],
+            "description": "性别（\"male\" 或 \"female\"）"
+          },
+          "weight": {
+            "type": "number",
+            "description": "体重（公斤，数值）"
+          },
+          "height": {
+            "type": "number",
+            "description": "身高（米，数值）"
+          }
+        },
+        "required": ["age", "gender", "weight", "height"]
+      }
+    },
+    {
+      "name": "get_bmi_category",
+      "description": "根据年龄、性别和BMI值获取分类",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "age": {
+            "type": "integer",
+            "description": "年龄（整数，6-79岁）"
+          },
+          "gender": {
+            "type": "string",
+            "enum": ["male", "female"],
+            "description": "性别（\"male\" 或 \"female\"）"
+          },
+          "bmi": {
+            "type": "number",
+            "description": "BMI值（数值）"
+          }
+        },
+        "required": ["age", "gender", "bmi"]
+      }
+    },
+    {
+      "name": "calculate_bmi_value",
+      "description": "计算BMI值（不考虑年龄和性别）",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "weight": {
+            "type": "number",
+            "description": "体重（公斤，数值）"
+          },
+          "height": {
+            "type": "number",
+            "description": "身高（米，数值）"
+          }
+        },
+        "required": ["weight", "height"]
+      }
+    }
+  ],
+  "resources": [
+    {
+      "uri": "bmi://standards",
+      "name": "BMI标准信息",
+      "description": "获取BMI标准信息",
+      "mimeType": "text/plain"
+    }
+  ]
+}
